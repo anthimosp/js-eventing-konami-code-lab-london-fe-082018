@@ -4,7 +4,9 @@ let index = 0
 
 function init() {
   const key = parseInt(e.detail || e.which);
-  if (body === code[index]){index++;}
+  if (input === code[index]){index++;
+    
+  }
 
 }
 
