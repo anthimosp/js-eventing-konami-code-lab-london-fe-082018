@@ -14,6 +14,6 @@ function init(e) {
 
 input.addEventListener('keydown', e => {
   console.log(e)
-  return init()
+  return init(e)
   }
 )
