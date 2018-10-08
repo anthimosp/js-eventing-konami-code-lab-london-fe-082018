@@ -4,15 +4,13 @@ let index = 0
 
 function init(e) {
   const key = parseInt(e.detail || e.which);
-  if (input === code[index]){index++;
+  if (key === code[index]){index++;
     if (index === code.length){ alert("Congratulations!");
-    index = 0;}}
-    else { index = 0;
+    index = 0;}
   }
-
 }
 
-input.addEventListener('keydown', e => {
+input.addEventListener('keydown', (e) => {
   console.log(e)
   return init(e)
   }
