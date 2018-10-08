@@ -4,10 +4,15 @@ let index = 0
 let key= null
 
 function init() {
-  if (key === code[index]){index++; console.log(key)
-    if (index === code.length){ alert("Congratulations!");
-    index = 0;}
+  if (key === code[index]){
+      index++; 
+      console.log(key);
+      if (index === code.length){ 
+        alert("Congratulations!");
+        index = 0;
+      }
   }
+  else {index = 0};
 }
 
 input.addEventListener('keydown', (e) => {
